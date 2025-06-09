@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=2.0" />
+  <title>Nuclee - Ropa Educativa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'Artifakt Element Heavy';
+      src: url('ArtifaktElement-Heavy.woff2') format('woff2'),
+           url('ArtifaktElement-Heavy.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Geometr212 BkCn BT';
+      src: url('Geometr212-BkCnBT.woff2') format('woff2'),
+           url('Geometr212-BkCnBT.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #636B2F;
+      color: #eee;
+      line-height: 1.6;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    header {
+      background-color: #3D4127;
+      padding: 1rem;
+      text-align: center;
+    }
+    header h1 {
+      color: #D4DE95;
+      font-size: 6rem;
+      font-family: 'Pacifico', cursive;
+      font-style: italic;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+      transition: transform 0.5s ease, text-shadow 0.5s ease;
+    }
+    header h1:hover {
+      transform: scale(1.05);
+      text-shadow: 2px 2px 12px rgba(224, 205, 149, 0.8);
+    }
+    header p {
+      font-family: 'Artifakt Element Heavy', sans-serif;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      background-color: #222;
+      padding: 1rem;
+    }
+    nav a {
+      color: #BAC095;
+      text-decoration: none;
+      font-family: 'Geometr212 BkCn BT', sans-serif;
+      font-size: 0.9rem;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #E0CD95;
+      font-family: 'Pacifico', cursive;
+      font-size: 2.5rem;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, text-shadow 0.4s ease;
+    }
+    h2:hover {
+      transform: scale(1.03);
+      text-shadow: 1px 1px 8px rgba(224, 205, 149, 0.7);
+    }
+    .card {
+      background-color: #222;
+      border-radius: 12px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 0 10px #0ff3;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+    .product-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .interactive-card {
+      background-color: #333;
+      border-left: 4px solid #BAC095;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .interactive-card:hover {
+      background-color: #444;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #000;
+      color: #777;
+    }
+  @keyframes shine {
+      0% { text-shadow: 0 0 10px #E0CD95; }
+      50% { text-shadow: 0 0 20px #fff, 0 0 30px #E0CD95; }
+      100% { text-shadow: 0 0 10px #E0CD95; }
+    }
+
+    header h1 {
+      animation: shine 2s infinite;
+    }
+  @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-5px); }
+      100% { transform: translateY(0px); }
+    }
+
+    .card, .interactive-card {
+      background-color: #222;
+      border-radius: 12px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 0 10px #0ff3;
+      transition: transform 0.3s;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nuclee</h1>
+    <p>Moda que educa. Conecta. Inspira.</p>
+  </header>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#nosotras">Sobre Nosotras</a>
+    <a href="#ropa">Tipos de Ropa</a>
+    <a href="#productos">Productos</a>
+    <a href="#info">Aprende</a>
+  </nav>
+  <section id="inicio">
+    <h2>¿Qué es Nuclee?</h2>
+    <p>Nuclee es una línea de ropa interactiva que combina moda y ciencia. A través de diseños con códigos QR, ofrecemos acceso a contenidos educativos sobre las células animales y vegetales, sus organelos y funciones.</p>
+  </section>
+  <section id="nosotras">
+    <h2>Sobre Nosotras</h2>
+    <p>Somos Fernanda, Luciana, Yazmin, María Pía y Yadhira, estudiantes del Carl Friedrich Gauss. Este proyecto nace de nuestra pasión por la biología y la innovación educativa.</p>
+  </section>
+  <section id="ropa">
+    <h2>¿Qué ropa encontrarás?</h2>
+    <ul>
+      <li>Camisetas con ilustraciones interactivas de células.</li>
+      <li>Sudaderas con mapas funcionales y escaneables.</li>
+      <li>Bolsas y mochilas con diseños anatómicos celulares.</li>
+      <li>Gorras y accesorios con funciones educativas y estilo.</li>
+    </ul>
+  </section>
+  <section id="productos">
+    <h2>Productos Principales</h2>
+    <div class="product-list">
+      <div class="card">Camisetas: Diseños de células con QR a videos y animaciones.</div>
+      <div class="card">Sudaderas: Mapas celulares interactivos con funciones de aprendizaje.</div>
+      <div class="card">Bolsas/Mochilas: Células vegetales y animales para llevar contigo.</div>
+      <div class="card">Gorras/Accesorios: Detalles y mensajes educativos.</div>
+    </div>
+  </section>
+  <section id="info">
+    <h2>Aprende</h2>
+    <div class="interactive-card">Tipos de células: Procariotas y Eucariotas</div>
+    <div class="interactive-card">Organúlos: ¿Qué son y para qué sirven?Los orgánulos son estructuras especializadas dentro de las células, rodeadas por membranas, que realizan funciones específicas para el funcionamiento y la supervivencia de la célula.</div>
+    <div class="interactive-card">Funciones celulares: Energía, reproducción y más</div>
+    <div class="interactive-card">Público objetivo: Estudiantes, docentes, amantes del estilo</div>
+  </section>
+  <footer>
+    <p>© 2025 Nuclee - Moda Educativa. Todos los derechos reservados.</p>
+  </footer>
+  <audio autoplay loop>
+    <source src="Taylor Swift - Lover (Instrumental).mp3" type="audio/mpeg">
+  </audio>
+</body>
+</html>
